@@ -119,7 +119,7 @@ function FaceDetectController($scope, $state, $interval, $http, config, $timeout
       MaxFaces: 10
     };
 
-    rekognition.searchFacesByImage(params, function (err, data) {
+    rekognition.detectFaces(params, function (err, data) {
       if (err) {
         //$scope.face_collection=null;
         //console.log(err, err.stack); // an error occurred
